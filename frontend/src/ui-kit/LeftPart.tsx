@@ -35,9 +35,13 @@ const LeftPart: Component<LeftPartProps> = ({
               href={social.href}
               target="_blank"
               rel="noreferrer"
-              class="opacity-40 hover:opacity-100 transition-opacity"
+              class="opacity-40 hover:opacity-100 w-[3.4rem] h-[3.4rem]"
             >
-              <img src={social.icon} alt={social.href} />
+              <img
+                src={social.icon}
+                alt={social.href}
+                class="object-contain w-full h-full"
+              />
             </a>
           )}
         </For>

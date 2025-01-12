@@ -46,7 +46,7 @@ h2 {
 }
 
 a {
-  @apply text-dark-white transition-colors;
+  @apply text-dark-white;
 }
 
 a:hover {

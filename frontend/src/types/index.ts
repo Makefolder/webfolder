@@ -1,3 +1,9 @@
+export type Section = {
+  title: string;
+  id: string;
+  cards: CardProps[];
+};
+
 export type LinkType = {
   text: string;
   href: string;
@@ -9,5 +15,5 @@ export type CardProps = {
   title: string;
   description: string;
   certificate?: boolean;
-  tags?: string[];
+  tags: string[];
 };

@@ -1,36 +1,36 @@
-import type { CardProps } from '@/types';
+import type { CardProps, Section } from '@/types';
 import { For, type Component } from 'solid-js';
 import Card from './Card';
+import AboutMe from './AboutMe';
 
 type RightPartProps = {
   aboutMe: string[];
-  cardData: CardProps[];
+  sections: Section[];
 };
 
-const RightPart: Component<RightPartProps> = ({ aboutMe, cardData }) => {
+const RightPart: Component<RightPartProps> = ({ aboutMe, sections }) => {
   return (
-    <div class="flex flex-col gap-[3rem]">
-      <section>
-        <h2>About me</h2>
-        <For each={aboutMe} fallback={<p>Empty section &#58;&#40;</p>}>
-          {(item) => <p class="block mt-[1rem]">{item}</p>}
-        </For>
-      </section>
-      <section>
-        <h2 class="mb-[2.8rem]">Education</h2>
-        <For each={cardData}>
-          {(card) => (
-            <Card
-              date={card.date}
-              title={card.title}
-              description={card.description}
-              tags={card.tags}
-              href={card.href}
-              certificate={card.certificate}
-            />
-          )}
-        </For>
-      </section>
+    <div class="flex flex-col gap-[3rem] mb-[140px]">
+      <AboutMe text={aboutMe} />
+      <For each={sections}>
+        {(section) => (
+          <section id={section.id}>
+            <h2 class="mb-[2.8rem]">{section.title}</h2>
+            <For each={section.cards}>
+              {(card) => (
+                <Card
+                  date={card.date}
+                  title={card.title}
+                  description={card.description}
+                  tags={card.tags}
+                  href={card.href}
+                  certificate={card.certificate}
+                />
+              )}
+            </For>
+          </section>
+        )}
+      </For>
     </div>
   );
 };
