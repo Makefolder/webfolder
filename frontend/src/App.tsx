@@ -1,4 +1,4 @@
-import PageConsts from './consts';
+import PageConsts from './lib/consts';
 import LeftPart from './ui-kit/LeftPart';
 import RightPart from './ui-kit/RightPart';
 
@@ -8,7 +8,7 @@ export default function App() {
   const { name, subtitle, slogan, navLinks, socials, aboutMe, sections } =
     PageConsts;
   return (
-    <>
+    <div>
       <div class="bg-noise"></div>
       <div class="fixed top-0 right-0 -z-10">
         <img src={ellipse} alt="ellipse" />
@@ -25,6 +25,6 @@ export default function App() {
           <RightPart aboutMe={aboutMe} sections={sections} />
         </div>
       </main>
-    </>
+    </div>
   );
 }

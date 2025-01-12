@@ -1,6 +1,6 @@
 import { Section } from '@/types';
 
-export const education: Section = {
+const education: Section = {
   title: 'Education',
   id: 'education',
   cards: [
@@ -29,7 +29,7 @@ export const education: Section = {
   ],
 };
 
-export const experience: Section = {
+const experience: Section = {
   title: 'Experience',
   id: 'experience',
   cards: [
@@ -86,7 +86,7 @@ export const experience: Section = {
 
 const baseLink = `https://github.com/Makefolder`;
 
-export const petProjects: Section = {
+const petProjects: Section = {
   title: 'Pet projects',
   id: 'pet-projects',
   cards: [
@@ -123,3 +123,7 @@ export const petProjects: Section = {
     },
   ],
 };
+
+const sections = [education, experience, petProjects];
+
+export default sections;

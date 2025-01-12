@@ -1,5 +1,5 @@
-import { education, experience, petProjects } from './sections';
-import type { LinkType, Section } from '@/types';
+import sections from './sections';
+import type { LinkType } from '@/types';
 
 import linkedinIcon from '@/assets/Linkedin.svg';
 import githubIcon from '@/assets/Github.svg';
@@ -8,14 +8,7 @@ import emailIcon from '@/assets/Email.svg';
 
 export const name = 'Artemii Fedotov';
 export const subtitle = 'Fullstack Developer';
-export const slogan = undefined; // replace with string if needed
-
-export const navLinks: LinkType[] = [
-  { text: 'About me', href: '#about-me' },
-  { text: 'Education', href: '#education' },
-  { text: 'Experience', href: '#experience' },
-  { text: 'Pet projects', href: '#pet-projects' },
-];
+export const slogan: string | undefined = 'artemii.fedotov@tutamail.com';
 
 export const socials = [
   { icon: githubIcon, href: 'https://github.com/Makefolder' },
@@ -32,7 +25,13 @@ export const aboutMe = [
   'I am open-minded, responsible, good in English and Slovak, fluent in Ukrainian and Russian.',
 ];
 
-export const sections: Section[] = [education, experience, petProjects];
+export const navLinks: LinkType[] = [
+  { text: 'About me', href: '#about-me' },
+  ...sections.map((section) => ({
+    text: section.title,
+    href: `#${section.id}`,
+  })),
+];
 
 const PageConsts = {
   name,
