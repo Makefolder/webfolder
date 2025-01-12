@@ -25,6 +25,8 @@ const RightPart: Component<RightPartProps> = ({ aboutMe, cardData }) => {
               title={card.title}
               description={card.description}
               tags={card.tags}
+              href={card.href}
+              certificate={card.certificate}
             />
           )}
         </For>

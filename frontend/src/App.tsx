@@ -42,6 +42,7 @@ export default function App() {
       title: 'Technical University of Košice',
       description:
         'I am currently enrolled to study Cyber Security, where I hope to further develop my skills and contribute to the field.',
+      href: 'https://www.fei.tuke.sk/en',
     },
     {
       date: '2020 – 2021',
@@ -55,6 +56,7 @@ export default function App() {
         'Marmoset Toolbag',
         'Substance Painter',
       ],
+      certificate: true,
     },
   ];
 
@@ -64,7 +66,7 @@ export default function App() {
       <div class="fixed top-0 right-0 -z-10">
         <img src={ellipse} alt="ellipse" />
       </div>
-      <main class="flex justify-between min-h-screen max-w-[1154px] mx-auto px-[10px]">
+      <main class="flex justify-between min-h-screen max-w-[1174px] mx-auto px-[10px]">
         <LeftPart
           name={NAME}
           subtitle={SUBTITLE}
