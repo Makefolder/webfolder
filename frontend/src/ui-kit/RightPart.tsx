@@ -1,7 +1,7 @@
-import type { CardProps, Section } from '@/types';
 import { For, type Component } from 'solid-js';
-import Card from './Card';
+import type { Section } from '@/types';
 import AboutMe from './AboutMe';
+import Card from './Card';
 
 type RightPartProps = {
   aboutMe: string[];

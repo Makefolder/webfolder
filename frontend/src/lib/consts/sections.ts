@@ -33,14 +33,14 @@ const experience: Section = {
   title: 'Experience',
   id: 'experience',
   cards: [
-    {
-      date: '2025 – Present',
-      title: 'Columbia University project',
-      description:
-        'Project for Colombian University (NYC). Still in development.',
-      href: 'https://www.columbia.edu/',
-      tags: ['Python', 'Solid.js', 'TypeScript', 'Software'],
-    },
+    // {
+    //   date: '2025 – Present',
+    //   title: 'Columbia University project',
+    //   description:
+    //     'Project for Colombian University (NYC). Still in development.',
+    //   href: 'https://www.columbia.edu/',
+    //   tags: ['Python', 'Solid.js', 'TypeScript', 'Software'],
+    // },
     {
       date: '2024 – Present',
       title: 'TheBuidl.io',
