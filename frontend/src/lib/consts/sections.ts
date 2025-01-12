@@ -91,6 +91,14 @@ const petProjects: Section = {
   id: 'pet-projects',
   cards: [
     {
+      date: '2025',
+      title: 'Webfolder',
+      description:
+        'This tool eliminates manual intervention by automatically pulling repositories, building projects and managing server deployments.',
+      href: `${baseLink}/webfolder`,
+      tags: ['TypeScript', 'Solid.js', 'Hono', 'SQLite', 'Fullstack'],
+    },
+    {
       date: '2024',
       title: 'Deployer',
       description:
