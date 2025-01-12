@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  opacity: 0.018;
+  z-index: 1000;
+  pointer-events: none;
+  background: url('./assets/grain.gif');
+}
+
+html {
+  font-size: 10px;
+  @apply bg-black text-white;
+}
+
+body {
+  @apply antialiased;
+
+  font-family: 'Outfit', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  @apply text-white;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  @apply text-white;
+}
+
+a {
+  @apply text-dark-white transition-colors;
+}
+
+a:hover {
+  @apply text-white;
+}
+
+p {
+  @apply text-dark-white;
+}
