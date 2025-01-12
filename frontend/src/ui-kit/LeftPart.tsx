@@ -22,9 +22,9 @@ const LeftPart: Component<LeftPartProps> = ({
 }) => {
   const [active, setActive] = createSignal(links[0]);
   return (
-    <div class="lg:sticky top-0 left-0 h-screen flex flex-col justify-between py-9 sm:py-[140px]">
+    <div class="lg:sticky top-0 left-0 h-screen flex flex-col justify-between py-12 sm:py-[140px]">
       <div>
-        <h1 class="text-[5rem] sm:text-[4.8rem] leading-tight sm:leading-[4.2rem]">
+        <h1 class="text-[5rem] sm:text-[4.8rem] leading-[5rem] sm:leading-[4.4rem]">
           {name}
         </h1>
         <h2>{subtitle}</h2>
@@ -38,7 +38,7 @@ const LeftPart: Component<LeftPartProps> = ({
               href={social.href}
               target="_blank"
               rel="noreferrer"
-              class="opacity-40 hover:opacity-100 w-[3.4rem] h-[3.4rem]"
+              class="opacity-40 hover:opacity-100 w-[4.2rem] h-[4.2rem] sm:w-[3.4rem] sm:h-[3.4rem]"
             >
               <img
                 src={social.icon}
