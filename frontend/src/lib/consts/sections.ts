@@ -13,6 +13,14 @@ const education: Section = {
       tags: [],
     },
     {
+      date: '2022',
+      title: 'CS61A Fall 2013 (online lectures)',
+      description:
+        "I gained a solid foundation in programming by completing UC Berkeley's CS61A course, using recorded lectures and assignments from the Fall 2013 semester.",
+      href: 'https://www.ocf.berkeley.edu/~shidi/cs61a/61a-fa13-website/staff.html',
+      tags: ['Python', 'Software'],
+    },
+    {
       date: '2020 – 2021',
       title: '3D Maya Artist',
       description:
