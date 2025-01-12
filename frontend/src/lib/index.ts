@@ -1,6 +1,16 @@
 import { CardProps, LinkType } from '@/types';
 import { createMemo, Setter } from 'solid-js';
 
+export const filterCards = (tags: string[], cards: CardProps[]) => {
+  return createMemo(() =>
+    cards.filter((project) =>
+      tags.every((tag) =>
+        project.tags?.some((projectTag) => projectTag === tag)
+      )
+    )
+  );
+};
+
 export const scrollToSection = (
   e: MouseEvent,
   href: string,
@@ -18,16 +28,6 @@ export const scrollToSection = (
       behavior: 'smooth',
     });
   }
-};
-
-export const filterCards = (tags: string[], cards: CardProps[]) => {
-  return createMemo(() =>
-    cards.filter((project) =>
-      tags.every((tag) =>
-        project.tags?.some((projectTag) => projectTag === tag)
-      )
-    )
-  );
 };
 
 export const handleIntersection = (

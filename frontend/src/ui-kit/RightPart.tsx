@@ -1,38 +1,22 @@
 import { For, type Component } from 'solid-js';
-import type { Section } from '@/types';
+import type { Section as TSection } from '@/types';
 import AboutMe from './AboutMe';
-import Card from './Card';
+import Section from './Section';
 
 type RightPartProps = {
   aboutMe: string[];
-  sections: Section[];
+  sections: TSection[];
 };
 
-const RightPart: Component<RightPartProps> = ({ aboutMe, sections }) => {
-  return (
-    <div class="flex flex-col gap-[3rem] mb-[140px]">
-      <AboutMe text={aboutMe} />
-      <For each={sections}>
-        {(section) => (
-          <section id={section.id}>
-            <h2 class="mb-[2.8rem]">{section.title}</h2>
-            <For each={section.cards}>
-              {(card) => (
-                <Card
-                  date={card.date}
-                  title={card.title}
-                  description={card.description}
-                  tags={card.tags}
-                  href={card.href}
-                  certificate={card.certificate}
-                />
-              )}
-            </For>
-          </section>
-        )}
-      </For>
-    </div>
-  );
-};
+const RightPart: Component<RightPartProps> = ({ aboutMe, sections }) => (
+  <div class="flex flex-col gap-[3rem] mb-[140px]">
+    <AboutMe text={aboutMe} />
+    <For each={sections}>
+      {(section) => (
+        <Section id={section.id} title={section.title} cards={section.cards} />
+      )}
+    </For>
+  </div>
+);
 
 export default RightPart;

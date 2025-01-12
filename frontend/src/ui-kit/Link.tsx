@@ -6,12 +6,10 @@ type LinkProps = {
   class?: string;
 };
 
-const Link: Component<LinkProps> = ({ href, children, class: linkStyles }) => {
-  return (
-    <a href={href} class={linkStyles}>
-      {children}
-    </a>
-  );
-};
+const Link: Component<LinkProps> = ({ href, children, class: linkStyles }) => (
+  <a href={href} class={linkStyles}>
+    {children}
+  </a>
+);
 
 export default Link;

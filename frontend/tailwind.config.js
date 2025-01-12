@@ -8,7 +8,7 @@ export default {
         white: '#EEEEEC',
         accent: '#FFC259',
         'card-stroke': '#4A4A4A',
-        'card-bg': '#141414',
+        'card-bg': '#14141490',
         'dark-white': '#B5B3AD',
       },
     },
