@@ -13,7 +13,7 @@ export default function App() {
       <div class="fixed top-0 right-0 -z-10">
         <img src={ellipse} alt="ellipse" />
       </div>
-      <main class="flex justify-between min-h-screen max-w-[1174px] mx-auto px-[10px]">
+      <main class="flex justify-between flex-col items-center lg:flex-row lg:items-start min-h-screen max-w-[1174px] mx-auto px-[10px]">
         <LeftPart
           name={name}
           subtitle={subtitle}

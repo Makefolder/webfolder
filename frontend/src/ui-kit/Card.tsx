@@ -33,7 +33,7 @@ const CardContainer: Component<{ children: JSXElement; date: string }> = ({
 }) => {
   return (
     <div class="p-[1.8rem] flex justify-between items-start gap-[0.8rem] rounded-[0.6rem] overflow-hidden border-[1px] border-transparent hover:bg-card-bg hover:border-card-stroke">
-      <div class="uppercase text-dark-white">{date}</div>
+      <div class="uppercase text-dark-white hidden sm:block">{date}</div>
       {children}
     </div>
   );
@@ -74,7 +74,7 @@ const Card: Component<CardProps> = (props) => {
   return (
     <CardWrapper href={href}>
       <CardContainer date={date}>
-        <div class="max-w-[31rem] flex-1">
+        <div class="max-w-full sm:max-w-[31rem] flex-1">
           <CardHead title={title} certificate={certificate} href={href} />
           <p
             class={`text-pretty mt-[1rem] ${tags.length > 0 && 'mb-[2.1rem]'}`}

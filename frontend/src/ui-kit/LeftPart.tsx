@@ -22,14 +22,16 @@ const LeftPart: Component<LeftPartProps> = ({
 }) => {
   const [active, setActive] = createSignal(links[0]);
   return (
-    <div class="sticky top-0 left-0 h-screen flex flex-col justify-between py-[140px]">
+    <div class="lg:sticky top-0 left-0 h-screen flex flex-col justify-between py-9 sm:py-[140px]">
       <div>
-        <h1 class="leading-[4.2rem]">{name}</h1>
+        <h1 class="text-[5rem] sm:text-[4.8rem] leading-tight sm:leading-[4.2rem]">
+          {name}
+        </h1>
         <h2>{subtitle}</h2>
         {slogan && <h3 class="leading-[2rem]">{slogan}</h3>}
       </div>
       <Navbar links={links} active={active} setActive={setActive} />
-      <div class="flex items-center gap-[3.2rem]">
+      <div class="flex items-center gap-[3.2rem] justify-center lg:justify-start">
         <For each={socials} fallback={<div></div>}>
           {(social) => (
             <a
