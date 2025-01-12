@@ -94,7 +94,7 @@ const petProjects: Section = {
       date: '2025',
       title: 'Webfolder',
       description:
-        'This tool eliminates manual intervention by automatically pulling repositories, building projects and managing server deployments.',
+        'A modern personal portfolio website built with a robust tech stack. Features a clean, responsive design showcasing my projects and skills.',
       href: `${baseLink}/webfolder`,
       tags: ['TypeScript', 'Solid.js', 'Hono', 'SQLite', 'Fullstack'],
     },
