@@ -53,7 +53,7 @@ const experience: Section = {
       date: '2024 – Present',
       title: 'TheBuidl.io',
       description:
-        'Web3 Buidlers that ships products in a matter of weeks. I am a fullstack developer on ineresting projects.',
+        'Working as a Fullstack Developer with a team of Web3 builders on bunch of interesting projects.',
       href: 'https://thebuidl.io/',
       tags: [
         'React',
