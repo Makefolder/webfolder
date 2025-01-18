@@ -1,9 +1,18 @@
-import { Hono } from 'hono'
+import env from './config';
+import configureOpenApi from './config/openApi.config';
+import createApp from './lib';
+import * as routers from './routes/index';
+import { BotService } from './services';
 
-const app = new Hono()
+new BotService(env.ADMIN_CHAT_ID);
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+const routes = Object.values(routers);
 
-export default app
+const app = createApp();
+configureOpenApi(app);
+
+routes.forEach((route) => {
+  app.route('/', route);
+});
+
+export default app;
