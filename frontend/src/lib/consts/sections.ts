@@ -5,14 +5,6 @@ const education: Section = {
   id: 'education',
   cards: [
     {
-      date: '2024',
-      title: 'Technical University of Košice',
-      description:
-        'I am currently enrolled to study Cyber Security, where I hope to further develop my skills and contribute to the field.',
-      href: 'https://www.fei.tuke.sk/en',
-      tags: [],
-    },
-    {
       date: '2022',
       title: 'CS61A Fall 2013 (online lectures)',
       description:
@@ -41,14 +33,6 @@ const experience: Section = {
   title: 'Experience',
   id: 'experience',
   cards: [
-    // {
-    //   date: '2025 – Present',
-    //   title: 'Columbia University project',
-    //   description:
-    //     'Project for Colombian University (NYC). Still in development.',
-    //   href: 'https://www.columbia.edu/',
-    //   tags: ['Python', 'Solid.js', 'TypeScript', 'Software'],
-    // },
     {
       date: '2024 – Present',
       title: 'TheBuidl.io',
@@ -70,7 +54,7 @@ const experience: Section = {
       title: 'Best Košice',
       description:
         'I have been a member of international organisation for students called BEST.',
-      href: 'https://beshttps://best.tuke.sk/tkosice.com/',
+      href: 'https://best.tuke.sk/',
       tags: [],
     },
     {
