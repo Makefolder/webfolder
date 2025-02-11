@@ -7,7 +7,7 @@ import leetcodeIcon from '@/assets/Leetcode.svg';
 import emailIcon from '@/assets/Email.svg';
 
 export const name = 'Artemii Fedotov';
-export const subtitle = 'Fullstack Developer';
+export const subtitle = 'Backend Developer';
 export const slogan: string | undefined = 'artemii.fedotov@tutamail.com';
 
 export const socials = [
@@ -21,7 +21,7 @@ export const socials = [
 ];
 
 export const aboutMe = [
-  'Proficient in solving complex coding challenges and creating software solutions. Proven ability to adapt and thrive in professional environments despite the absence of a formal degree. Highly adaptable and dedicated to delivering high-quality results under tight deadlines.',
+  'Experienced backend developer skilled in Node.js, Next.js, and React. Adept at solving complex coding challenges and building robust software solutions. Proven ability to deliver high-quality results under tight deadlines.',
   'I am open-minded, responsible, good in English and Slovak, fluent in Ukrainian and Russian.',
 ];
 
