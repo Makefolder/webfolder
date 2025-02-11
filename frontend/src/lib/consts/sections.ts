@@ -5,7 +5,10 @@ const education: Section = {
   id: 'education',
   cards: [
     {
-      date: '2022',
+      date: {
+        start: new Date('2022'),
+        end: new Date('2022'),
+      },
       title: 'CS61A Fall 2013 (online lectures)',
       description:
         "I gained a solid foundation in programming by completing UC Berkeley's CS61A course, using recorded lectures and assignments from the Fall 2013 semester.",
@@ -13,7 +16,10 @@ const education: Section = {
       tags: ['Python', 'Software'],
     },
     {
-      date: '2020 – 2021',
+      date: {
+        start: new Date('2020'),
+        end: new Date('2021'),
+      },
       title: '3D Maya Artist',
       description:
         'I’ve got experience of working in such programs as Maya, UE4, Rizom UV, Marmoset Toolbag and Substance Painter.',
@@ -34,7 +40,9 @@ const experience: Section = {
   id: 'experience',
   cards: [
     {
-      date: '2024 – Present',
+      date: {
+        start: new Date('2024'),
+      },
       title: 'TheBuidl.io',
       description:
         'Working as a Fullstack Developer with a team of Web3 builders on bunch of interesting projects.',
@@ -50,7 +58,10 @@ const experience: Section = {
       ],
     },
     {
-      date: '2024',
+      date: {
+        start: new Date('2024'),
+        end: new Date('2024'),
+      },
       title: 'Best Košice',
       description:
         'I have been a member of international organisation for students called BEST.',
@@ -58,7 +69,10 @@ const experience: Section = {
       tags: [],
     },
     {
-      date: '2024',
+      date: {
+        start: new Date('2024'),
+        end: new Date('2024'),
+      },
       title: 'Olywka',
       description:
         'We developed Olywka Shop from scratch into a production-ready online clothing store The platform now serves over 1,000 daily visitors.',
@@ -83,7 +97,10 @@ const petProjects: Section = {
   id: 'pet-projects',
   cards: [
     {
-      date: '2025',
+      date: {
+        start: new Date('2025'),
+        end: new Date('2025'),
+      },
       title: 'Webfolder',
       description:
         'A modern personal portfolio website built with a robust tech stack. Features a clean, responsive design showcasing my projects and skills.',
@@ -91,7 +108,10 @@ const petProjects: Section = {
       tags: ['TypeScript', 'Solid.js', 'Hono', 'SQLite', 'Fullstack'],
     },
     {
-      date: '2024',
+      date: {
+        start: new Date('2024'),
+        end: new Date('2024'),
+      },
       title: 'Deployer',
       description:
         'This tool eliminates manual intervention by automatically pulling repositories, building projects and managing server deployments.',
@@ -99,7 +119,10 @@ const petProjects: Section = {
       tags: ['Rust', 'CI/CD', 'Software'],
     },
     {
-      date: '2024',
+      date: {
+        start: new Date('2024'),
+        end: new Date('2024'),
+      },
       title: 'STUD lib',
       description:
         'Standard (aka “STD”) lib. Anything you might need while programming in C.',
@@ -107,7 +130,10 @@ const petProjects: Section = {
       tags: ['C99', 'Library'],
     },
     {
-      date: '2024',
+      date: {
+        start: new Date('2024'),
+        end: new Date('2024'),
+      },
       title: 'IRC lib',
       description:
         'Simple Internet Relay Chat library written in C (standard 99).',
@@ -115,7 +141,10 @@ const petProjects: Section = {
       tags: ['C99', 'Library'],
     },
     {
-      date: '2024',
+      date: {
+        start: new Date('2024'),
+        end: new Date('2024'),
+      },
       title: 'LMDB',
       description: 'LMDB is a local movie database.',
       href: `${baseLink}/lmdb`,

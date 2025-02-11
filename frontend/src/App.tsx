@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div>
       <div class="bg-noise"></div>
-      <div class="fixed top-0 right-0 -z-10">
+      <div class="fixed -top-[10rem] -right-[20rem] -z-10">
         <img src={ellipse} alt="ellipse" />
       </div>
       <main class="flex justify-between flex-col items-center lg:flex-row lg:items-start min-h-screen max-w-[1174px] mx-auto px-[10px]">

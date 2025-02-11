@@ -4,9 +4,10 @@ import { For, Show } from 'solid-js';
 import certIcon from '@/assets/certificate.svg';
 import linkArrow from '@/assets/link-arrow.svg';
 import CardTag from './CardTag';
+import { CardProp as ICardProp } from '@/types';
 
 type CardProps = {
-  date: string;
+  date: ICardProp['date'];
   href?: string;
   title: string;
   tags: string[];
@@ -27,12 +28,21 @@ const CardWrapper: Component<{ children: JSXElement; href?: string }> = ({
     <div class="cursor-default">{children}</div>
   );
 
-const CardContainer: Component<{ children: JSXElement; date: string }> = ({
-  children,
-  date,
-}) => (
+const getDate = (date: ICardProp['date']) => {
+  if (date.end) {
+    if (date.start.getFullYear() === date.end.getFullYear())
+      return date.end.getFullYear();
+    return `${date.start.getFullYear()} - ${date.end.getFullYear()}`;
+  }
+  return `${date.start.getFullYear()} – Present`;
+};
+
+const CardContainer: Component<{
+  children: JSXElement;
+  date: ICardProp['date'];
+}> = ({ children, date }) => (
   <div class="p-[1.8rem] flex justify-between items-start gap-[0.8rem] rounded-[0.6rem] overflow-hidden border-[1px] border-transparent hover:bg-card-bg hover:border-card-stroke">
-    <div class="uppercase text-dark-white hidden sm:block">{date}</div>
+    <div class="uppercase text-dark-white hidden sm:block">{getDate(date)}</div>
     {children}
   </div>
 );

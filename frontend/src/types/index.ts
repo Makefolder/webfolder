@@ -1,7 +1,7 @@
 export type Section = {
   title: string;
   id: string;
-  cards: CardProps[];
+  cards: CardProp[];
 };
 
 export type LinkType = {
@@ -9,8 +9,11 @@ export type LinkType = {
   href: string;
 };
 
-export type CardProps = {
-  date: string;
+export type CardProp = {
+  date: {
+    start: Date;
+    end?: Date;
+  };
   href?: string;
   title: string;
   description: string;

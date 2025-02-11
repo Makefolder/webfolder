@@ -1,7 +1,7 @@
-import { CardProps, LinkType } from '@/types';
+import { CardProp, LinkType } from '@/types';
 import { createMemo, Setter } from 'solid-js';
 
-export const filterCards = (tags: string[], cards: CardProps[]) => {
+export const filterCards = (tags: string[], cards: CardProp[]) => {
   return createMemo(() =>
     cards.filter((project) =>
       tags.every((tag) =>
