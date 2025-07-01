@@ -5,7 +5,6 @@ import Navbar from './Navbar';
 type LeftPartProps = {
   name: string;
   subtitle: string;
-  slogan?: string;
   links: LinkType[];
   socials: {
     icon: string;
@@ -16,7 +15,6 @@ type LeftPartProps = {
 const LeftPart: Component<LeftPartProps> = ({
   name,
   subtitle,
-  slogan,
   links,
   socials,
 }) => {
@@ -28,7 +26,6 @@ const LeftPart: Component<LeftPartProps> = ({
           {name}
         </h1>
         <h2>{subtitle}</h2>
-        {slogan && <h3 class="leading-[2rem]">{slogan}</h3>}
       </div>
       <Navbar links={links} active={active} setActive={setActive} />
       <div class="flex items-center gap-[3.2rem] justify-center lg:justify-start">
