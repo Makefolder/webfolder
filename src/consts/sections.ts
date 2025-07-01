@@ -111,7 +111,7 @@ const petProjects: Section = {
       },
       title: 'STUD lib',
       description:
-        'Standard (aka “STD”) lib. Anything you might need while programming in C.',
+        'Standard (“STD”) lib. Anything you might need while programming in C.',
       href: `${baseLink}/studlib`,
       tags: ['C99', 'Library'],
     },
