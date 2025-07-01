@@ -58,9 +58,9 @@ const education: Section = {
         start: new Date('2022'),
         end: new Date('2022'),
       },
-      title: 'CS61A Fall 2013 (online lectures)',
+      title: 'Self-Directed Learning',
       description:
-        "I gained a solid foundation in programming by completing UC Berkeley's CS61A course, using recorded lectures and assignments from the Fall 2013 semester.",
+        "CS61A: Structure and Interpretation of Computer Programs (UC Berkeley) Online lectures + assignments",
       href: 'https://www.ocf.berkeley.edu/~shidi/cs61a/61a-fa13-website/index.html',
       tags: ['Python', 'Software'],
     },
