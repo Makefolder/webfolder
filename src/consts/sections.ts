@@ -79,7 +79,7 @@ const petProjects: Section = {
       title: 'Web3 Coinflip',
       description:
         'A coin-flip-like game written in Solidity for two players, where their bets influence the chances of winning.',
-      href: `https://github.com/wrkbnch-io/duels-contract`,
+      href: `${baseLink}/web3-coin-flip`,
       tags: ['Solidity', 'Hardhat', 'TypeScript', 'Web3'],
     },
     {
