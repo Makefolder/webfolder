@@ -32,7 +32,6 @@ const experience: Section = {
       title: 'Olywka',
       description:
         'We developed Olywka Shop from scratch into a production-ready online clothing store.',
-      href: 'https://olywka-shop.com.ua/',
       tags: ['Bun', 'Elysia.js', 'SQLite', 'Caddy', 'Docker', 'Backend'],
     },
   ],
@@ -79,7 +78,7 @@ const petProjects: Section = {
       title: 'Web3 Coinflip',
       description:
         'A coin-flip-like game written in Solidity for two players, where their bets influence the chances of winning.',
-      href: `${baseLink}/web3-coin-flip`,
+      href: `${baseLink}/web3-coinflip`,
       tags: ['Solidity', 'Hardhat', 'TypeScript', 'Web3'],
     },
     {
