@@ -75,11 +75,11 @@ const petProjects: Section = {
         start: new Date('2025'),
         end: new Date('2025'),
       },
-      title: 'Web3 Coinflip',
+      title: 'forge',
       description:
-        'A coin-flip-like game written in Solidity for two players, where their bets influence the chances of winning.',
-      href: `${baseLink}/web3-coinflip`,
-      tags: ['Solidity', 'Hardhat', 'TypeScript', 'Web3'],
+        'Forge - Automated Docker container deployment tool for VPS environments.',
+      href: `${baseLink}/forge`,
+      tags: ['GoLang', 'CI/CD', 'Software'],
     },
     {
       date: {
@@ -94,14 +94,14 @@ const petProjects: Section = {
     },
     {
       date: {
-        start: new Date('2024'),
-        end: new Date('2024'),
+        start: new Date('2025'),
+        end: new Date('2025'),
       },
-      title: 'Deployer',
+      title: 'Web3 Coinflip',
       description:
-        'Tracks Github repository, pulls latest commits, creates svc files and builds executables on VPS.',
-      href: `${baseLink}/deployer`,
-      tags: ['Rust', 'CI/CD', 'Software'],
+        'A coin-flip-like game written in Solidity for two players, where their bets influence the chances of winning.',
+      href: `${baseLink}/web3-coinflip`,
+      tags: ['Solidity', 'Hardhat', 'TypeScript', 'Web3'],
     },
     {
       date: {
